@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT金融反詐騙</title>
+    <link rel="stylesheet" href="./aos-2.3.2/dist/aos.css">
+    <link rel="stylesheet" href="./bootstrap-5.1.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./anime-3.2.1/lib/anime.min.js"></script>
+    <script src="./aos-2.3.2/dist/aos.js"></script>
+    <script src="./bootstrap-5.1.3/dist/js/bootstrap.js"></script>
+    <script src="./three.js-r145/build/three.js"></script>
+    <script src="./three.js-r145/examples/js/controls/OrbitControls.js"></script>
+    <script src="./chart.js-3.9.1/dist/chart.js"></script>
+    <script src="./data.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid nav__bg">
+            <nav class="navbar navbar-expand-xl container navbar-dark">
+                <a href="#top"><img src="./images/t1.png" class="rounded-circle me-3" width="50px"></a>
+                <h2 class="mb-0 text-light">NFT金融反詐騙</h2>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" navbar-collapse collapse justify-content-end" id="link">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link nav__link">金融詐騙</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#how" class="nav-link nav__link">如何避免</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#item" class="nav-link nav__link">詐騙方式</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#chart" class="nav-link nav__link">統計資訊</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <a href="#letten" class="nav-link">
+                                <img src="./images/letten.png" class="nav__icon letten__icon">
+                            </a>
+                        </li>
+                        <li class="nav-item"
+                            onclick="window.open('index.html','_blank','top=100,left=100,width=500,height=700')">
+                            <a href="javascript://" class="nav-link">
+                                <img src="./images/phone.png" class="nav__icon phone__icon">
+                            </a>
+                        </li>
+                        <li class="nav-link" onclick="color()">
+                            <img src="./images/sun.png" class="nav__icon sun">
+                        </li>
+                        <li class="nav-link" data-bs-toggle="modal" data-bs-target="#root">
+                            <img src="./images/root.png" class="nav__icon">
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="搜尋">
+                        <img src="./images/search.png" class="search__icon" data-bs-toggle="modal"
+                            data-bs-target="#none">
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__bg carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/test_img31.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/test_img32.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/test_img41.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container abc">
+            <div class="row">
+                <div class="col-xl-6 col-sm-12 header__section text-light">
+                    <h1 class="header__title ts">別讓金融詐騙找上你!</h1>
+                    <h3 class="fw ts">
+                        還在擔心自己的辛苦錢財<span class="titlespan">被騙走</span>嗎?
+                        還在擔心網路上散播的<span class="titlespan">消息真假</span>嗎?
+                        帶你來看近期的<span class="titlespan">詐騙手法</span>以及教你如何<span class="titlespan">避免</span>輕易地上當。
+                    </h3>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <div class="three"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="py-5 my-5" style="overflow: hidden;">
+            <div id="about"></div>
+            <div class="container">
+                <h1 class="title py-5" data-aos="fade-right" data-aos-duration="700">
+                    甚麼是<span class="titlespan">金融詐騙</span>
+                </h1>
+                <h4 class="fw">
+                    隨著現代科技的進步造就社會繁榮，⺠眾⽣活品質也開始提升，
+                    尤其在網路技術⽇新⽉異的推波助瀾下，更是以無時差、無國界的形
+                    式<span class="titlespan">傳播資訊</span>。
+                    雖然網路讓⺠眾⽣活更加便利，
+                    卻也被有⼼⼈⼠利⽤成為<span class="titlespan">犯罪途徑</span>。
+                    近來發⽣中央研究院學術界⼈⼠及影星等重⼤<span class="titlespan">詐騙案件</span>，
+                    便是因為詐騙集團利⽤網路或其他途徑不法<span class="titlespan">取得⺠眾個資</span>後，
+                    利⽤假檢警及操作ATM解除分期付款等⽅式進⾏詐騙。
+                    此外也有藉由<span class="titlespan">網路拍賣購物</span>等模式騙取⺠眾財產，
+                    ⺠眾因⽽在不知情的情況下受騙，詐騙⼿法可說是<span class="titlespan">層出不窮</span>。
+
+                </h4>
+            </div>
+            <ul class="about__box my-5">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <div id="how"></div>
+        <section class="py-5 my-5 container" style="overflow: hidden;">
+            <h1 class="title py-5" data-aos="fade-right" data-aos-duration="700">
+                如何<span class="titlespan">避免</span>
+            </h1>
+            <div class="row">
+                <div class="col-xl-4 col-sm-12 how__container text-light">
+                    <div class="how__item bgone rounded-pill" data-aos="fade-down-right">
+                        <img src="./images/tt1.png" class="how__img rounded-circle end-0">
+                        <h3 class="mb-0 me-5 pe-5 fw">假冒公務人員</h3>
+                    </div>
+                    <div class="how__item bgtwo rounded-pill" data-aos="fade-up-right">
+                        <img src="./images/t5.png" class="how__img two rounded-circle end-0">
+                        <h3 class="mb-0 me-5 pe-5 fw">假冒拍賣賣家</h3>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12 how__container">
+                    <div class="how__imgbox">
+                        <img src="./images/tt1.png" class="rounded-circle w-100 how__centerimg">
+                    </div>
+                    <h2 class="my-3 fw how__name">假冒機構公務員或警察機構詐財手法及預防策略</h2>
+                    <h5 class="fw colorone how__text">
+                        法院或警察機關辦案，不會收取當事人現金、亦不會要求匯款；法院或警察機關不會監管當事人帳戶；法院不會用傳真方式，將傳喚書送給當事人，一定會以掛號信函送達；公家機關絕對不會以電話、電話錄音或以簡訊通知用戶轉帳，或要打電話與某單位聯繫。
+                    </h5>
+                </div>
+                <div class="col-xl-4 col-sm-12 how__container text-light">
+                    <div class="how__item bgtwo rounded-pill" data-aos="fade-down-left">
+                        <img src="./images/t2.png" class="how__img two rounded-circle start-0">
+                        <h3 class="mb-0 ms-5 ps-5 fw">假冒銀行人員</h3>
+                    </div>
+                    <div class="how__item bgone rounded-pill" data-aos="fade-up-left">
+                        <img src="./images/tt4.png" class="how__img rounded-circle start-0">
+                        <h3 class="mb-0 ms-5 ps-5 fw">假冒朋友借錢</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="item"></div>
+        <section class="py-5 my-5 item__box" style="overflow: hidden;">
+            <h1 class="title py-5" data-aos="fade-right" data-aos-duration="700">
+                詐騙<span class="titlespan">手法</span>
+            </h1>
+
+            <div class="item__container">
+            </div>
+        </section>
+        <div id="chart"></div>
+        <section class="py-5 my-5">
+            <h1 class="title py-5" data-aos="fade-right" data-aos-duration="700">
+                國民APP whoscall <span class="titlespan">2021年度報告</span>
+            </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <h3 class="fw">如右圖顯示，重要商用電話占比為83.5通，為最多數量，推銷電話為40.4通，為第二多數量，最後大家最不想接到的詐騙電話為4.4通，為最少的通數。</h3>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 canvas__box">
+                        <canvas class="mychart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div id="letten"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-sm-12">
+                    <form class="footer__form" onsubmit="footer()">
+                        <h2 class="fw colorone">留言區</h2>
+                        <div class="my-5">
+                            <label class="fw fs-4 colorone">姓名</label>
+                            <input type="text" class="footer__input name__input" placeholder="name" required="required">
+                        </div>
+                        <div class="my-5">
+                            <label class="fw fs-4 colorone">信箱</label>
+                            <input type="email" class="footer__input gmail__input" placeholder="gmail"
+                                required="required">
+                        </div>
+                        <div class="my-5">
+                            <label class="fw fs-4 colorone">留言</label>
+                            <input type="text" class="footer__input message__input" placeholder="message"
+                                required="required">
+                        </div>
+                        <div class="my-5 footer__btnbox">
+                            <button class="btn bgtwo" type="reset">重設</button>
+                            <button class="btn bgtwo" type="submit">送出</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-5 col-sm-12">
+                    <div class="footer__borad">
+                        <h2 class="fw colorone">留言板</h2>
+                        <div class="line nt-2 mb-4"></div>
+                        <div class="borad__container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="wave"></div>
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-xl-4 col-sm-12">
+                        <h2>聯絡資訊</h2>
+                        <p class="fs-5">電話 : (02)-1234-5678</p>
+                        <p class="fs-5">地址 : 新北市三重區中正北路</p>
+                        <p class="fs-5">信箱 : B029@gmail.com</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 d-flex justify-content-center align-items-end">
+                        <p class="fs-5">&copy; 2022-11-30 B029</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 down__box">
+                        <h2>關注我們</h2>
+                        <div class="d-flex">
+                            <img src="./images/fb.png" width="40px" class="footer__img" data-bs-toggle="modal"
+                                data-bs-target="#none">
+                            <img src="./images/ig.png" width="40px" class="footer__img" data-bs-toggle="modal"
+                                data-bs-target="#none">
+                            <img src="./images/line.png" width="40px" class="footer__img" data-bs-toggle="modal"
+                                data-bs-target="#none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="none">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h2 class="fw">您目前沒有網路</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>您目前沒有網路，請先檢查網路連線後再試一次</h4>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="root">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h2 class="fw">會員登入</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="my-5">
+                        <label class="fw fs-4 colorone">帳號</label>
+                        <input type="text" class="footer__input" placeholder="帳號">
+                    </div>
+                    <div class="my-5">
+                        <label class="fw fs-4 colorone">密碼</label>
+                        <input type="password" class="footer__input" placeholder="密碼">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#ok">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ok">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h2 class="fw">登入成功</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/ok.png" class="mx-auto d-block" width="50%">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#top" class="top">
+        <img src="./images/top.png" width="35px">
+    </a>
+    <div class="robot" onclick="open_robot()">
+        <img src="./images/robot.png" width="35px">
+    </div>
+    <div class="robot__container">
+        <div class="robot__header">
+            <h2 class="mb-0">聊天機器人</h2>
+            <button class="btn-close" onclick="close_robot()" style="filter: invert(1);"></button>
+        </div>
+        <div class="robot__body">
+            <p>
+                <span class="robot__message">您好，我是本網站的聊天機器人，很高興為您服務，有任何問題都可以向我詢問唷!</span>
+            </p>
+
+        </div>
+        <div class="robot__footer">
+            <div class="robot__btnbox my-2">
+                <div class="robot__btn" onclick="robot__btn(0)">
+                    <a href="#about" class="text-light">金融詐騙</a>
+                </div>
+                <div class="robot__btn" onclick="robot__btn(1)">
+                    <a href="#how" class="text-light">如何預防</a>
+                </div>
+                <div class="robot__btn" onclick="robot__btn(2)">
+                    <a href="#item" class="text-light">詐騙手法</a>
+                </div>
+            </div>
+            <div class="robot__inputbox">
+                <input type="text" class="robot__input rounded-pill" placeholder="請輸入訊息..." onkeydown="inkey(event)">
+                <img src="./images/send.png" width="8%" class="ms-2" onclick="send__robot()">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
